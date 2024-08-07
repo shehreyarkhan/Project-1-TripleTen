@@ -2,16 +2,16 @@
   /* Add page class properties here */
   min-width: 1300px;
   max-width: 1600px;
-  height: 100vh;
-  align-items: center;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+  margin: auto;
 }
 
 .header {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   min-height: 720px;
   max-height: 800px;
   padding: 30px 80px 40px;
@@ -20,18 +20,16 @@
 }
 
 .header__title {
-  margin-top: 128px;
-  margin-bottom: 0px;
+  margin: 128px 0 0 0;
   max-width: 601px;
   line-height: 76px;
   font-weight: 500;
   color: #000000;
-  font-size: 60px;
+  font-size: 66px;
 }
 
 .header__description {
-  margin-top: 32px;
-  margin-bottom: 0px;
+  margin: 32px 0 0 0;
   font-size: 20px;
   line-height: 30px;
   color: #000000;
