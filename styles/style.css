@@ -62,6 +62,11 @@
   text-decoration: none;
 }
 
+.header__link:hover {
+  color: #d35722;
+  cursor: pointer;
+}
+
 .header__address {
   margin: 0;
   color: #838383;
@@ -95,7 +100,7 @@
 }
 
 .nav__link:hover {
-  color: #e96e3a;
+  color: #d35722;
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;
@@ -104,12 +109,13 @@
 .content {
   display: flex;
   width: 100%;
+  flex-direction: column;
 }
 
 .events {
   padding: 100px 0 120px 80px;
-  display: flex;
   align-items: start;
+  display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   background-color: #f2f2f2;
@@ -174,6 +180,10 @@
 .events__more {
   color: #e96e3a;
   text-decoration: none;
+}
+
+.events__more:hover {
+  color: #d35722;
 }
 
 .events__cover {
@@ -251,4 +261,245 @@
   text-align: center;
   font-size: 14px;
   margin: 0;
+}
+
+.staff {
+  padding: 100px 0 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/staff_picks_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.staff__title {
+  text-align: center;
+  font-size: 44px;
+  color: #fff;
+  line-height: 52px;
+  margin: 0 0 24px;
+  font-weight: 500;
+}
+
+.staff__subtitle {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+
+.staff__cards {
+  max-width: 760px;
+  margin-top: 68px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 32px 40px 20px 32px;
+  box-sizing: border-box;
+  width: 360px;
+  height: 420px;
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card__text {
+  margin: 20px 0 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card__footer {
+  margin: auto 0 0 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #838383;
+}
+
+.membership {
+  padding: 100px 0 140px;
+  background-color: #f2f2f2;
+}
+
+.membership__title {
+  max-width: 574px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+}
+
+.membership__steps {
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 100px 0 0;
+  display: flex;
+  flex-basis: auto;
+  gap: 40px;
+  /* Add styles */
+}
+
+.step {
+  /* Add styles */
+  width: 220px;
+}
+
+.step__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.step__icon {
+  margin-left: 20px;
+}
+
+.step__description {
+  margin: 10px 0 0;
+}
+
+.about {
+  padding: 58px 220px 82px 560px;
+  background-color: #1f1f1f;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.about__title {
+  margin: 0 0 32px;
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 500;
+}
+
+.about__content {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  max-width: 660px;
+  margin-left: auto;
+}
+
+.about__image {
+  width: 703px;
+  /* add styles */
+  position: absolute;
+  left: -271px;
+  top: -82.5px;
+}
+
+.about__paragraph:nth-child(-n + 3) {
+  margin-bottom: 20px;
+}
+
+.footer {
+  box-sizing: border-box;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 60px 80px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column {
+  gap: auto;
+}
+
+.footer__columns-wrapper {
+  display: flex;
+}
+
+.footer__column_content_hours {
+  margin-right: 80px;
+}
+
+.footer__column_content_social {
+  list-style-type: none;
+}
+
+.footer__logo {
+  width: 57px;
+  height: 80px;
+  margin-right: auto;
+}
+
+.footer__list {
+  /* The code below removes the default browser styles for lists */
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list-item {
+  list-style-type: none;
+  font-size: 16px;
+  display: flex;
+  margin: 0;
+  align-content: center;
+  align-items: center;
+}
+
+.footer__list-item:nth-child(-n + 1) {
+  margin-bottom: 16px;
+}
+
+.footer__column-heading {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.footer__column-link {
+  display: flex;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.footer__column-link:hover {
+  color: #c1c1c1;
+  cursor: pointer;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__copyright {
+  margin-top: 108px;
 }
